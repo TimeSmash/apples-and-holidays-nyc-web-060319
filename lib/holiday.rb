@@ -57,9 +57,9 @@ def all_winter_holiday_supplies(holiday_hash)
       supply
     end
 
-# winter_supplies.flatten
+winter_supplies.flatten
 
-# end
+end
 
 def all_supplies_in_holidays(holiday_hash)
   # iterate through holiday_hash and print items such that your readout resembles:
