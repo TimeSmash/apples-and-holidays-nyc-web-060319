@@ -87,6 +87,17 @@ end
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
-  holiday_hash
+  thing = holiday_hash.collect do |season, holiday_list|
+    # p season
+    # p holiday_list
+    holiday_list.collect do |holiday, supply_list|
+      # p supply_list
+      if supply_list.include?("BBQ")
+        p holiday
+      end
+    end
+  end
+
+  thing.flatten.compact!
 end
 
