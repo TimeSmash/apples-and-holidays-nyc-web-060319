@@ -77,10 +77,7 @@ def all_winter_holiday_supplies(holiday_hash)
             word.capitalize!
           end
           puts "  #{cap_multi_word.join(" ")} : #{supply_list.join(", ")}"
-          # .collect do |word|
-          #   word.capitalize!
-          # end
-
+          
         else
         puts "  #{event.to_s.capitalize!}: #{supply_list.join(", ")}"
         end
