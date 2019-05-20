@@ -68,18 +68,15 @@ def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
   holiday_hash.each do |season, holiday_list|
     puts "#{season.to_s.capitalize!}:"
-    # # p holiday_list
     
     holiday_list.each do |event, supply_list|
         if event.to_s.include?("_")
-          # p event.to_s.split("_")
           cap_multi_word = event.to_s.split("_").each do |word|
             word.capitalize!
           end
           puts "  #{cap_multi_word.join(" ")} : #{supply_list.join(", ")}"
-          
         else
-        puts "  #{event.to_s.capitalize!}: #{supply_list.join(", ")}"
+          puts "  #{event.to_s.capitalize!}: #{supply_list.join(", ")}"
         end
     end
   end
