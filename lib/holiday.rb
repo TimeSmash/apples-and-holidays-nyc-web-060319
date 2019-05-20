@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
           cap_multi_word = event.to_s.split("_").each do |word|
             word.capitalize!
           end
-          puts "  #{cap_multi_word.join(" ")} : #{supply_list.join(", ")}"
+          puts "  #{cap_multi_word.join(" ")}: #{supply_list.join(", ")}"
         else
           puts "  #{event.to_s.capitalize!}: #{supply_list.join(", ")}"
         end
